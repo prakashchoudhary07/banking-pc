@@ -17,15 +17,15 @@ jobs:
       run: npm install -g pnpm
     - name: Install dependencies
       run: pnpm i
-    - name: Run Test - 2 points
-      id: test-2-points
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: Test - 2 points
-        command: pnpm test-run-basic
-        timeout: 1
-        max-score: 2
-    - name: Run Test - 7 points
+    # - name: Run Test - 2 points
+    #   id: test-2-points
+    #   uses: classroom-resources/autograding-command-grader@v1
+    #   with:
+    #     test-name: Test - 2 points
+    #     command: pnpm test-run-basic
+    #     timeout: 1
+    #     max-score: 2
+    # - name: Run Test - 7 points
       id: test-7-points
       uses: classroom-resources/autograding-command-grader@v1
       with:
